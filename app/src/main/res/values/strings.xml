@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Cafeq-App</string>
+    <string name="cafe">CafeQ</string>
+    <string name="username">Nama Akun</string>
+    <string name="email_address">Alamat Email</string>
+    <string name="password">Password</string>
+    <string name="conf_password">Konfirmasi Password</string>
+    <string name="cell">Nomor Handphone</string>
+    <string name="register">Daftar</string>
+    <string name="login">Masuk</string>
+    <string name="askLogin">Sudah punya akun?</string>
+    <string name="askReg">Belum punya akun?</string>
+    <string name="home">Home</string>
+    <string name="profile">Profil</string>
+    <string name="transaction">Transaksi</string>
+</resources>
