@@ -17,4 +17,5 @@
     <string name="transactionList">Daftar Transaksi</string>
     <string name="back">Kembali</string>
     <string name="logout">Keluar</string>
+    <string name="addCafe">Tambah Cafe</string>
 </resources>
