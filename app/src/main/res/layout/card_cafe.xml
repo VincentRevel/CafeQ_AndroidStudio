@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/frame_card"
+    android:id="@+id/frameCard_cafe"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
@@ -24,11 +24,11 @@
             android:layout_height="match_parent"
             android:layout_gravity="center">
             <ImageView
-                android:id="@+id/imageView"
+                android:id="@+id/iv_cafe"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                tools:srcCompat="@tools:sample/backgrounds/scenic" />
+                tools:src="@tools:sample/backgrounds/scenic"/>
         </androidx.cardview.widget.CardView>
 
         <Space
