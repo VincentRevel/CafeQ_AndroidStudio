@@ -54,13 +54,14 @@
         </LinearLayout>
 
         <View
-            android:layout_gravity="center"
-            android:layout_marginLeft="14dp"
             android:id="@+id/vct_search"
             android:layout_width="25dp"
             android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dp"
+            android:background="@drawable/search"
             android:clickable="true"
-            android:background="@drawable/search" />
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
     </LinearLayout>
 
@@ -69,7 +70,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/divider"
+        android:background="@drawable/horizontal_divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cc_layout1" />
