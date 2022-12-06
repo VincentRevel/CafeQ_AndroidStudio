@@ -5,25 +5,35 @@
       <map>
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/button.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/card_box.xml" value="0.3625" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/circle.xml" value="0.3625" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/divider.xml" value="0.326" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/home.xml" value="0.3625" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/home_terracotta.xml" value="0.1755" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/ic_map_pin.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/profile.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/rounded_button.xml" value="0.3465" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/search.xml" value="0.326" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/star.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/transaction.xml" value="0.3625" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/transaction_colored.xml" value="0.288" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/transaction_orange.xml" value="0.288" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/transaction_terracotta.xml" value="0.1755" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/transaction_terractotta.xml" value="0.1755" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/vdown.xml" value="0.326" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/vertical_div.xml" value="0.326" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/vleft.xml" value="0.3465" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/font-v26/fonts.xml" value="0.3927083333333333" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/font/fonts.xml" value="0.39166666666666666" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/card_cafe.xml" value="0.3614583333333333" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/card_transact.xml" value="0.3614583333333333" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/card_transaction.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/closed_cafe.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/homepage.xml" value="0.33" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/login.xml" value="0.2813257881972514" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/profile_page.xml" value="0.3614583333333333" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/register.xml" value="0.33" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/splashart.xml" value="0.27109375" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/transact_list.xml" value="0.3614583333333333" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/welcome.xml" value="0.33" />
       </map>
     </option>
