@@ -16,4 +16,5 @@
     <string name="profile">Profil</string>
     <string name="transactionList">Daftar Transaksi</string>
     <string name="back">Kembali</string>
+    <string name="logout">Keluar</string>
 </resources>
