@@ -30,6 +30,7 @@
             android:background="@drawable/horizontal_divider" />
 
         <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_transaction"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             tools:listitem="@layout/card_transaction"/>

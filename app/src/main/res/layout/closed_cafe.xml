@@ -76,6 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/cc_layout1" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_cafe"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginTop="8dp"

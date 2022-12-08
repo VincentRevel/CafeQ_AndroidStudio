@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "518080938499",
+    "firebase_url": "https://cafeq-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "cafeq-app",
+    "storage_bucket": "cafeq-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:518080938499:android:0c2c15d097279c5318c436",
+        "android_client_info": {
+          "package_name": "com.beta.cafeq_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "518080938499-0u5nsl97o83295i5j5v519s8usm4d1co.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp81MDzDBI7-gITeHAfJzSWNFw8_Li2GQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "518080938499-0u5nsl97o83295i5j5v519s8usm4d1co.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

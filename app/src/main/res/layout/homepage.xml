@@ -17,7 +17,7 @@
     <View
         android:id="@+id/vct_div"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="2dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/horizontal_divider"
         app:layout_constraintTop_toBottomOf="@+id/fragment"
@@ -47,6 +47,7 @@
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_gravity="center_horizontal"
+                android:clickable="true"
                 android:background="@drawable/home_terracotta" />
 
             <TextView
@@ -66,15 +67,16 @@
             android:orientation="vertical">
 
             <View
-                android:id="@+id/vct_add"
+                android:id="@+id/vct_transact"
                 android:layout_width="18dp"
                 android:layout_height="18dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
+                android:clickable="true"
                 android:background="@drawable/transaction" />
 
             <TextView
-                android:id="@+id/tv_addCafe"
+                android:id="@+id/tv_transact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -106,6 +108,7 @@
                 android:text="@string/profile"
                 android:textColor="@color/light_grey"
                 android:textAlignment="center"
+                android:clickable="true"
                 android:textSize="10sp" />
         </LinearLayout>
 
@@ -131,6 +134,7 @@
                 android:text="@string/logout"
                 android:textColor="@color/light_grey"
                 android:textAlignment="center"
+                android:clickable="true"
                 android:textSize="10sp" />
         </LinearLayout>
 

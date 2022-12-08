@@ -41,6 +41,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
         android:orientation="vertical"
@@ -50,17 +51,18 @@
         app:layout_constraintTop_toBottomOf="@+id/add_layout1">
 
         <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            app:srcCompat="@drawable/large_add" />
+            android:id="@+id/iv_add"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/large_add" />
 
         <TextView
             android:id="@+id/textView2"
-            android:paddingTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/nunito_medium"
+            android:paddingTop="16dp"
             android:text="Tambah Gambar"
             android:textAlignment="center"
             android:textSize="16sp" />
@@ -78,6 +80,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Nama Cafe"
+                android:fontFamily="@font/nunito_medium"
+                android:singleLine="true"
                 android:inputType="textPersonName" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -92,7 +96,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/nunito_medium"
                 android:ems="10"
+                android:singleLine="true"
                 android:hint="Alamat Cafe" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -106,9 +112,11 @@
                 android:id="@+id/et_chair"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_medium"
                 android:layout_weight="1"
                 android:ems="10"
                 android:hint="Jumlah Kursi"
+                android:singleLine="true"
                 android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
