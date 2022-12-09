@@ -24,7 +24,7 @@ class ProfileActivity : AppCompatActivity() {
         val context = this
         val currUser = Firebase.auth.currentUser
         if(currUser != null){
-            DAO.getSpecificUser(currUser.uid).addValueEventListener(object: ValueEventListener {
+            DAO.getSpecificUser(currUser.uid).addListenerForSingleValueEvent(object: ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val user = snapshot.getValue<User>()
                     if(user?.img == "") {
@@ -53,6 +53,11 @@ class ProfileActivity : AppCompatActivity() {
 
         binding.btnEditProfile.setOnClickListener {
             val intent = Intent(this, EditProfileActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.btnChangePass.setOnClickListener {
+            val intent = Intent(this, EditEmailPassActivity::class.java)
             startActivity(intent)
         }
     }

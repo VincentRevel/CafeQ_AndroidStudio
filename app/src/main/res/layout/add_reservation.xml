@@ -32,11 +32,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="-64dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@id/btn_reservation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/iv_cafe">
@@ -77,15 +75,15 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:fontFamily="@font/nunito_medium"
-                android:inputType="number"
-                android:hint="Jumlah Kursi" />
+                android:hint="Jumlah Kursi"
+                android:inputType="number" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="16dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
 
             <com.google.android.material.textfield.TextInputLayout
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -97,21 +95,21 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="60dp"
-                    android:ems="10"
-                    android:hint="Pilih Tanggal Waktu"
-                    android:fontFamily="@font/nunito_medium"
                     android:clickable="false"
+                    android:ems="10"
+                    android:fontFamily="@font/nunito_medium"
+                    android:hint="Pilih Tanggal Waktu"
                     android:inputType="number" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <View
                 android:id="@+id/btn_datetime"
-                android:layout_gravity="center"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="-50dp"
                 android:background="@drawable/time_calendar"
                 android:clickable="true"
-                android:layout_marginLeft="-50dp"
                 tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 
         </LinearLayout>

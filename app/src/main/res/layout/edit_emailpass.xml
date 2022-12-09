@@ -32,23 +32,23 @@
             android:fontFamily="@font/nunito_extrabold"
             android:paddingLeft="8dp"
             android:paddingTop="16dp"
-            android:text="Daftar untuk melanjutkan!"
+            android:textAlignment="center"
+            android:text="Ubah email dan password"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/reg_layout1"
+        android:id="@+id/editpassemail_layot"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/reg_layout2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btn_saveEP"
         app:layout_constraintTop_toBottomOf="@+id/reg_toolbar">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -57,65 +57,14 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:fontFamily="@font/nunito_medium"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:hint="@string/name" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp" >
-
-            <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
                 android:fontFamily="@font/nunito_medium"
-                android:inputType="textEmailAddress"
-                android:hint="@string/email_address" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_password"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:fontFamily="@font/nunito_medium"
-                android:inputType="textPassword"
-                android:hint="@string/password" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="16dp" >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_passConfirm"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:fontFamily="@font/nunito_medium"
-                android:inputType="textPassword"
-                android:hint="@string/conf_password" />
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -125,72 +74,70 @@
             android:paddingTop="16dp">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/et_cell"
+                android:id="@+id/et_currPass"
                 android:layout_width="match_parent"
-                android:fontFamily="@font/nunito_medium"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:ems="10"
-                android:hint="@string/cell"
-                android:inputType="phone" />
+                android:fontFamily="@font/nunito_medium"
+                android:hint="Password Saat Ini"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_newPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/nunito_medium"
+                android:hint="Password Baru"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_passConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/nunito_medium"
+                android:hint="Konfirmasi Password Baru"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/reg_layout2"
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_saveEP"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:orientation="vertical"
+        android:background="@drawable/rounded_button"
+        android:fontFamily="@font/nunito_bold"
+        android:text="Simpan Email / Password"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reg_layout1">
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_register"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:background="@drawable/rounded_button"
-            android:fontFamily="@font/nunito_bold"
-            android:text="@string/register"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="16sp" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:paddingTop="16dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/tv_asklogin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/nunito_regular"
-                android:text="@string/askLogin"
-                android:textColor="@color/dark_grey" />
-
-            <Space
-                android:layout_width="8dp"
-                android:layout_height="match_parent" />
-
-            <TextView
-                android:id="@+id/tb_login"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:clickable="true"
-                android:fontFamily="@font/nunito_bold"
-                android:text="@string/login"
-                android:textColor="@color/orange"
-                tools:ignore="TouchTargetSizeCheck" />
-        </LinearLayout>
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/editpassemail_layot" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

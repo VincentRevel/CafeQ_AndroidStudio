@@ -1,4 +1,5 @@
 package com.beta.cafeq_app.fragment
+
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -11,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.beta.cafeq_app.DAO
 import com.beta.cafeq_app.ReservationActivity
 import com.beta.cafeq_app.adapter.ClosedCafeAdapter
-import com.beta.cafeq_app.data.Cafe
 import com.beta.cafeq_app.data.CafeDTO
 import com.beta.cafeq_app.data.User
 import com.beta.cafeq_app.databinding.ClosedCafeBinding
@@ -48,8 +48,8 @@ class ClosedCafe : Fragment() {
         adapter = ClosedCafeAdapter()
         binding.rvCafe.adapter = adapter
         loadCafeFirebase()
-        adapter.setOnItemClickCallback(object: ClosedCafeAdapter.OnItemClickCallback{
-            override fun onItemClicked(data: CafeDTO) {
+        adapter.setOnItemCafeClickCallback(object: ClosedCafeAdapter.OnItemCafeClickCallback {
+            override fun onItemCafeClicked(data: CafeDTO) {
                 val currUser = Firebase.auth.currentUser
                 if(currUser != null){
                     DAO.getSpecificUser(currUser.uid).addValueEventListener(object: ValueEventListener {
@@ -62,6 +62,7 @@ class ClosedCafe : Fragment() {
                                 startActivity(intent)
                             }
                         }
+
                         override fun onCancelled(error: DatabaseError) {}
                     })
                 }

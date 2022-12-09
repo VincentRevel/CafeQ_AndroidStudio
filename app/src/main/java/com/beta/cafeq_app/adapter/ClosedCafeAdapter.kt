@@ -11,7 +11,7 @@ import com.beta.cafeq_app.databinding.CardCafeBinding
 
 class ClosedCafeAdapter: RecyclerView.Adapter<ClosedCafeAdapter.CardViewViewHolder>() {
     private val cafeList = ArrayList<CafeDTO>()
-    private var onItemClickCallback: OnItemClickCallback? = null
+    private var onItemCafeClickCallback: OnItemCafeClickCallback? = null
 
     inner class CardViewViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         private val binding = CardCafeBinding.bind(itemView)
@@ -27,7 +27,7 @@ class ClosedCafeAdapter: RecyclerView.Adapter<ClosedCafeAdapter.CardViewViewHold
                     .into(ivCafe)
             }
             itemView.setOnClickListener{
-                onItemClickCallback?.onItemClicked(cafe)
+                onItemCafeClickCallback?.onItemCafeClicked(cafe)
             }
         }
     }
@@ -45,15 +45,15 @@ class ClosedCafeAdapter: RecyclerView.Adapter<ClosedCafeAdapter.CardViewViewHold
         return cafeList.size
     }
 
-    fun setOnItemClickCallback(onItemClickCallback: OnItemClickCallback) {
-        this.onItemClickCallback = onItemClickCallback
+    fun setOnItemCafeClickCallback(onItemCafeClickCallback: OnItemCafeClickCallback) {
+        this.onItemCafeClickCallback = onItemCafeClickCallback
     }
 
     fun setItems(aList: ArrayList<CafeDTO>) {
         cafeList.addAll(aList)
     }
 
-    interface OnItemClickCallback {
-        fun onItemClicked (data: CafeDTO)
+    interface OnItemCafeClickCallback {
+        fun onItemCafeClicked (data: CafeDTO)
     }
 }

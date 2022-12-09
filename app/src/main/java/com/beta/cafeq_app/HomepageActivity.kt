@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.beta.cafeq_app.databinding.HomepageBinding
 import com.beta.cafeq_app.fragment.ClosedCafe
 import com.beta.cafeq_app.fragment.Transaction
+import com.google.firebase.auth.FirebaseAuth
 
 class HomepageActivity : AppCompatActivity(){
     lateinit var binding: HomepageBinding

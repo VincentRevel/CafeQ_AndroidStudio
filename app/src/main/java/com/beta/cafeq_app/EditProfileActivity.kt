@@ -125,7 +125,7 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
                 binding.etCell.requestFocus()
                 return@setOnClickListener
             }
-            userFirebase(name,email, cell, bdate, gender)
+            userFirebase(name, cell, bdate, gender)
         }
     }
 
@@ -138,7 +138,7 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         return "$day $savedMonthText $year"
     }
 
-    private fun userFirebase(name: String, email: String, cell: String, bdate: String, gender: String) {
+    private fun userFirebase(name: String, cell: String, bdate: String, gender: String) {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.loading_dialog)
         if (dialog.window!=null) {
@@ -148,7 +148,7 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         var url: String
         if(updateProfile) {
             DAO.uploadImageProfile(userImage,UUID.randomUUID().toString())
-                .addOnSuccessListener { img ->
+                .addOnSuccessListener(this) { img ->
                     val downloadUrl: Task<Uri> = img!!.storage.downloadUrl
                     downloadUrl.addOnCompleteListener { img ->
                         url = ("https://"
@@ -160,7 +160,7 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
                 }
             updateProfile=false
         }else {
-            DAO.updateUser(currUser,User("",name,email,bdate,gender,cell))
+            DAO.updateUser(currUser,User("",name,"",bdate,gender,cell))
         }
         dialog.dismiss()
         Toast.makeText(this,"Profil berhasil diperbarui", Toast.LENGTH_SHORT).show()

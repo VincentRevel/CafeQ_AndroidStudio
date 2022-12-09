@@ -24,6 +24,9 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".EditEmailPassActivity"
+            android:exported="false"/>
+        <activity
             android:name=".RegisterActivity"
             android:exported="false"/>
         <activity
@@ -40,6 +43,9 @@
             android:exported="false"/>
         <activity
             android:name=".ReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CancelReservationActivity"
             android:exported="false" />
         <activity
             android:name=".fragment.AddCafe"

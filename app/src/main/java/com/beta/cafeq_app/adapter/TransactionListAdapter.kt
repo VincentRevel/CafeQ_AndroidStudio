@@ -7,10 +7,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.beta.cafeq_app.DAO
 import com.beta.cafeq_app.R
 import com.beta.cafeq_app.data.Cafe
-import com.beta.cafeq_app.data.CafeDTO
-import com.beta.cafeq_app.data.Reservation
+import com.beta.cafeq_app.data.ReservationDTO
 import com.beta.cafeq_app.databinding.CardTransactionBinding
-import com.beta.cafeq_app.fragment.Transaction
 import com.bumptech.glide.Glide
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
@@ -18,11 +16,12 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.getValue
 
 class TransactionListAdapter: RecyclerView.Adapter<TransactionListAdapter.CardViewViewHolder>() {
-    private val transactionList = ArrayList<Reservation>()
+    private val transactionList = ArrayList<ReservationDTO>()
+    private var onItemTransactionClickCallback: OnItemTransactionClickCallback? = null
 
     inner class CardViewViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         private val binding = CardTransactionBinding.bind(itemView)
-        fun bind(reservation: Reservation) {
+        fun bind(reservation: ReservationDTO) {
             with(binding) {
                 DAO.getSpecificCafe(reservation.idCafe).addValueEventListener(object: ValueEventListener{
                     override fun onDataChange(snapshot: DataSnapshot) {
@@ -38,6 +37,9 @@ class TransactionListAdapter: RecyclerView.Adapter<TransactionListAdapter.CardVi
 
                     override fun onCancelled(error: DatabaseError) {}
                 })
+                itemView.setOnClickListener{
+                    onItemTransactionClickCallback?.onItemTransactionClicked(reservation)
+                }
             }
         }
     }
@@ -55,7 +57,13 @@ class TransactionListAdapter: RecyclerView.Adapter<TransactionListAdapter.CardVi
         return transactionList.size
     }
 
-    fun setItems(aList: ArrayList<Reservation>) {
+    fun setItems(aList: ArrayList<ReservationDTO>) {
         transactionList.addAll(aList)
+    }
+    fun setOnItemTransactionClickCallback(onItemTransactionClickCallback: OnItemTransactionClickCallback) {
+        this.onItemTransactionClickCallback = onItemTransactionClickCallback
+    }
+    interface OnItemTransactionClickCallback {
+        fun onItemTransactionClicked (data: ReservationDTO)
     }
 }

@@ -239,7 +239,7 @@
             android:layout_weight="1"
             android:background="@drawable/rounded_button"
             android:fontFamily="@font/nunito_bold"
-            android:text="Ubah Email /  Password"
+            android:text="Ubah Email / Password"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp" />

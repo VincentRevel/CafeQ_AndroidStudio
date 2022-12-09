@@ -5,6 +5,7 @@ import com.beta.cafeq_app.data.Cafe
 import com.beta.cafeq_app.data.Reservation
 import com.beta.cafeq_app.data.User
 import com.google.android.gms.tasks.Task
+import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.Query
@@ -30,12 +31,14 @@ object DAO {
     fun updateUser(idUser: String,user: User){
         if (user.img !== "") {
             db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("img" to user.img))
+        }else if(user.email !== "") {
+            db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("email" to user.email))
+        }else{
+            db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("name" to user.name))
+            db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("gender" to user.gender))
+            db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("birthdate" to user.birthdate))
+            db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("cell" to user.cell))
         }
-        db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("name" to user.name))
-        db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("gender" to user.gender))
-        db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("birthdate" to user.birthdate))
-        db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("email" to user.email))
-        db.getReference("Users/$idUser").updateChildren(mapOf<String,String>("cell" to user.cell))
     }
     fun addCafe(cafe: Cafe): Task<Void> {
         return databaseReferenceCafe.push().setValue(cafe)
@@ -46,6 +49,7 @@ object DAO {
     fun getSpecificCafe(idCafe: String): Query {
         return db.getReference("Cafe/$idCafe").orderByKey()
     }
+
     fun updateCafe(idCafe: String,latestChair: Int){
         db.getReference("Cafe/$idCafe").updateChildren(mapOf<String,Int>("chair" to latestChair))
     }
@@ -55,7 +59,9 @@ object DAO {
     fun getReservation(idUser: String): Query {
         return databaseReferenceReservation.child(idUser).orderByKey()
     }
-
+    fun deleteReservation(idUser: String, idReservation: String) {
+        db.getReference("Reservation/$idUser").child(idReservation).removeValue()
+    }
     fun uploadImage(path: Uri, idImg: String): UploadTask {
         return storageReferenceImgCafe.child("images/$idImg").putFile(path)
     }

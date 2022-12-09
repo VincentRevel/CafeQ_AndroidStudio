@@ -7,6 +7,7 @@
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/add_terracotta.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/button.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/calendar.xml" value="0.3135" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/cancel.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/card_box.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/circle.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/divider.xml" value="0.326" />
@@ -15,6 +16,7 @@
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/ic_map_pin.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/logout.xml" value="0.288" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/profile.xml" value="0.3625" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/red_rounded_button.xml" value="0.298" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/rounded_button.xml" value="0.3465" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/search.xml" value="0.326" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/drawable/star.xml" value="0.3625" />
@@ -38,6 +40,9 @@
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/card_transact.xml" value="0.3614583333333333" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/card_transaction.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/closed_cafe.xml" value="0.3625" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/detail_reservation.xml" value="0.1" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/edi_emailpass.xml" value="0.33" />
+        <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/edit_emailpass.xml" value="0.3401268115942029" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/edit_profile.xml" value="0.3625" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/homepage.xml" value="0.33" />
         <entry key="..\:/Dev/College/FifthSemester/Interactive System/CafeqApp/app/src/main/res/layout/loading.xml" value="0.35" />
